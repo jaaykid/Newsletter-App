@@ -1,21 +1,21 @@
-$('#users').on('click', function () {
-    $.ajax({
-        type: 'GET',
-        url: "http://localhost:4000/api/users",
-        data: "json",
-        success: function (json) {
-            $('#help').append(json.foreach(user => {
-                `<tr>
-                <th scope="row">1</th>
-                <td>${json.data.firstName}</td>
-                <td>${json.data.lastName}</td>
-                <td>${json.data.email}</td>
-                <td>${json.data.date}</td>
-                </tr>`
-            }))
-        }
-    });
-})
+// $('#users').on('click', function () {
+//     $.ajax({
+//         type: 'GET',
+//         url: "http://localhost:4000/api/users",
+//         data: "json",
+//         success: function (json) {
+//             $('#help').append(json.foreach(user => {
+//                 `<tr>
+//                 <th scope="row">1</th>
+//                 <td>${json.data.firstName}</td>
+//                 <td>${json.data.lastName}</td>
+//                 <td>${json.data.email}</td>
+//                 <td>${json.data.date}</td>
+//                 </tr>`
+//             }))
+//         }
+//     });
+// })
 
 
     $.ajax({
@@ -23,6 +23,7 @@ $('#users').on('click', function () {
         url: "http://localhost:4000/api/users",
         data: "json",
         success: function (res) {
+            console.log(res)
             for(let i = 0; i < res.length; i++) {
                 $('#help').append(`<tr>
                 <th scope="row">1</th>

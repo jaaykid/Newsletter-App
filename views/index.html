@@ -19,7 +19,7 @@
       <input class="searchBar" type="text" placeholder="Search"/>
     </div>
     <h1>Sephoree</h1>
-    <i class="far fa-user"><a href="/api/admin">click me!!!</a></i>
+    <a href="/api/admin"><i class="far fa-user"></i></a> 
     <i class="fas fa-shopping-bag"></i>
   </header>
   <main>
@@ -62,7 +62,7 @@
       </div>
       <button class="signUpButton" id="signUpButton">Sign Up</button>
     </div>
-    <div class="formInput">
+    <form id="hello" class="formInput">
       <i class="far fa-times-circle formCircle" id="formEsc"></i>
       <p class="formTitle">A newsletter as unique as you</p>
       <div class="formContainer">
@@ -70,16 +70,18 @@
           <i class="fas fa-sliders-h"></i>
           <p class="customText">Customize?</p>
         </div>
-        <input type="text" name="firstName" id="firstName" placeholder="First Name" />
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
-        <input type="email" name="email" id="email" placeholder="Email" />
+        <!-- <form action="POST" id="hello">  -->
+          <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+        <!-- </form> -->
         <div class="captcha">
           <i class="fas fa-sync-alt"></i>
           <p class="customTextBottom">Captcha</p>
         </div>
       </div>
       <button class="submitButton" id="submitButton">Register</button>
-    </div>
+    </form>
     <div class="successResponse">
       <i class="far fa-times-circle" id="successEsc"></i>
       <img src="../images/unsplash.jpg" alt="Makeup Image" class="splashImg"/>
