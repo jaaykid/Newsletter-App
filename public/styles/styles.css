@@ -98,25 +98,41 @@ hr {
 /* ________________________________________________ */
 
 .signUpPopUp {
-  display: none;
+  display: flex;
   position: fixed;
+  flex-direction: column;
   bottom: 0;
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
   background-color: white;
   border-top: .25vh solid;
   text-align: center;
 }
 
+.popUpContainer {
+  width: 70vw;
+  margin: 0 auto;
+}
+
 .popUpText {
   margin: 0 auto;
-  width: 70vw;
 }
 
 .fa-times-circle{
+  align-self: flex-end;
   bottom: 25vw;
   right: 2vw;
+  margin: 2vh 2vh 0 0;
   color: #9B9B9B;
+}
+
+.signUpButton {
+  height: 5vh;
+  width: 30vw;
+  margin: 0 auto 5vh auto;
+  color: white;
+  background-color: #E98EB2;
+  border-radius: 1vh;
 }
 
 /* ________________________________________________ */
@@ -164,11 +180,6 @@ input[type=text], input[type=email]{
   border-radius: 1vh;
 }
 
-.formEsc {
-  align-self: flex-end;
-  margin: 2vh 2vh 0 0;
-}
-
 /* ________________________________________________ */
 
 .successResponse {
@@ -177,7 +188,7 @@ input[type=text], input[type=email]{
   background-size: 100%;
   background-position: 0 -50vh;  */
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 85vw;
   height: 85vh;
