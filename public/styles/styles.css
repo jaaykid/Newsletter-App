@@ -257,7 +257,7 @@ input[type=text], input[type=email]{
 .submitButton {
   height: 41px;
   width: 135px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   color: white;
   background-color: #E98EB2;
   border-radius: 1vh;
