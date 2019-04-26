@@ -31,6 +31,15 @@ br {
   margin: 0;
 }
 
+.fa-times-circle {
+  align-self: flex-end;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  margin: 14px 14px 0 0;
+  color: #9B9B9B;
+}
+
 /* ________________________________________________ */
 header {
   display: flex;
@@ -47,6 +56,11 @@ header {
   font-size: 4vh;
   margin: 0 10vw 0 3vw;
 }
+
+.searchBar{
+  display: none;
+}
+
 .fa-user {
   font-size: 4vh;
   margin: 0 3vw 0 10vw;
@@ -65,6 +79,7 @@ main {
 }
 
 .navBar {
+  display: none;
   margin: 1vh 0 3vh 0;
   width: 85vw;
 }
@@ -101,6 +116,32 @@ hr {
 }
 
 /* ________________________________________________ */
+.langingPageContent {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  height: 30vh;
+  margin: 3vh 0 0 0;
+}
+.product {
+  width: 35vw;
+  height: auto;
+}
+
+.productTitles {
+  font-size: 3.25vw;
+  text-align: center;
+}
+
+.topProduct {
+  margin: 0;
+}
+
+.markupTips {
+  margin: 0;
+}
+
+/* ________________________________________________ */
 
 .signUpPopUp {
   position: fixed;
@@ -123,11 +164,6 @@ hr {
   margin: 9px auto 0 auto;
 } 
 
-.signUpCircle{
-  margin: 28px 0 0 0;
-  color: #9B9B9B;
-}
-
 .signUpButton {
   height: 41px;
   width: 135px;
@@ -140,7 +176,7 @@ hr {
 /* ________________________________________________ */
 
 .formInput {
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -156,15 +192,6 @@ hr {
   width: 297px;
   margin: 0 auto;
   font-size: 19px;
-}
-
-.formCircle {
-  align-self: flex-end;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  margin: 2vh 2vh 0 0;
-  color: #9B9B9B;
 }
 
 .customCat {
@@ -251,7 +278,7 @@ input[type=text], input[type=email]{
 .splashImg {
   width: 269px;
   height: 205px;
-  margin: 0 12.5px 0 12.5px;
+  margin: 12.5px 12.5px 0 12.5px;
 }
 
 .userNameDisplay {
@@ -302,4 +329,61 @@ footer {
 .footerText {
   text-align: center;
   width: 85vw;
+}
+
+/* ________________________________________________ */
+
+/* @media only screen and (max-width: 720px) {
+}; */
+
+@media only screen and (min-width: 720px) {
+  .fa-bars {
+    display: none;
+  }
+  .navBar {
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    width: 85vw;
+  }
+  .fa-search {
+    margin: 0;
+  }
+  .searchIcons {
+    margin: 0 10vw 0 0;
+  }
+  .searchBar{
+    display: inline-block;
+    border-radius: 12px;
+  }
+  .signUpPopUp {
+    width: 650px;
+  }
+  .product {
+    width: 300px;
+    height: 137px;
+  }
+  .productTitles {
+    text-align: center;
+  }
+  .formInput {
+    width: 500px;
+  }
+  .formContainer {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .successResponse {
+    width: 500px;
+  }
+  .splashImg {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .backToShopping {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

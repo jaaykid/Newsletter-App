@@ -17,7 +17,7 @@ $('#formEsc').on('click', (e) => {
 
 $('#submitButton').on('click', (e) => {
   $('.formInput').css('display', 'none');
-  $('.successResponse').css('display', 'block');
+  $('.successResponse').css('display', 'flex');
 });
 
 // Close and Close & Reveal Landing Page
