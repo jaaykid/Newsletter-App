@@ -30,7 +30,7 @@ $('#backToShopping').on('click', (e) => {
 });
 
 
-$('.submitButton').on('submit', function (e) {
+$('.submitButton').on('click', function (e) {
   e.preventDefault()
 $.ajax({
   type: "POST",
