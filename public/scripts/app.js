@@ -30,7 +30,8 @@ $('#backToShopping').on('click', (e) => {
 });
 
 
-$('.submitButton').on('submit', function () {
+$('.submitButton').on('submit', function (e) {
+  e.preventDefault()
 $.ajax({
   type: "POST",
   url: "/api/users",
