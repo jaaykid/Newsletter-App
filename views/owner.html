@@ -4,24 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/owner.css">
     <script defer src="/scripts/jquery-3.3.1.js"></script>
     <script defer src="/scripts/owner.js"></script>
-    <link rel="stylesheet" href="/styles/owner.css">
     <title>Document</title>
 </head>
 <body>
-    <table style="width:100%">
-        <tr>
-            <td>First name</td>
-            <td>Last name</td>
-            <td>Email</td>
-        </tr>
-        <tr>
+        <div class="page-header">
+                <h1>Admin</h1>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage newsletter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                </ul>
+        </div>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Sign up date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
             <td>Justin</td>
-            <td>Steve</td>
-            <td>Peter</td>
-        </tr>
+            <td>Curry</td>
+            <td>@mdo</td>
+            <td>01-01-1999</td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            </tr>
+        </tbody>
     </table>
-    
 </body>
 </html>

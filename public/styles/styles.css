@@ -95,6 +95,9 @@ hr {
   object-position: 50% 90%;
 }
 
+#date {
+  display: none;
+}
 /* ________________________________________________ */
 
 .signUpPopUp {

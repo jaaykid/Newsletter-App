@@ -28,6 +28,9 @@ const newUser = [
     },
 ]
 
+db.User.deleteMany({}, (err, users) => {
+    if (err) {return console.log(err)}    
+})
 
 // db.User.create(newUser, (err, savedUser) => {
 //     if (err) {

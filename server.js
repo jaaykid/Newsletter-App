@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+// const validate = require('express-validation')
 const app = express();
 const db = require('./models');
 const PORT = process.env.PORT || 4000
@@ -64,7 +65,15 @@ app.get('/api/users', (req, res) => {
         });
     });
     
+    // get one user 
+app.get('/api/users/:id', (req, res) => {  
+    let userId = req.params.id;
 
+    db.User.findOne({ _id: userId }, (err, foundUser) => {
+        if(err) { return console.log(err) }
+        res.json(foundUser);
+    });
+});
 // Create a new user
 app.post('/api/users', (req, res) => {
     let newUser = new db.User({
@@ -72,8 +81,23 @@ app.post('/api/users', (req, res) => {
         lastName: req.body.lastName,
         email: req.body.email
     })
-    res.json(newUser)
-        
+    db.User.create(newUser, (err, savedUser) => {
+        if (err) return console.log(err);
+        res.json(savedUser)
+    })  
 });
+
+// delete user 
+app.delete('/api/users/:id', (req, res) => {
+    let userId = req.params.id;
+    db.User.deleteOne(
+        { _id: userId },
+        (err, deletedUser) => {
+            if(err) { return console.log(err) }
+            res.json(deletedUser);
+    });
+});
+
+
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

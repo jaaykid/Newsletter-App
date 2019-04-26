@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
-  <link rel="stylesheet" href="/public/styles/styles.css">
-  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script  defer src="/scripts/jquery-3.3.1.js"></script>
+  <script defer src="/scripts/app.js"></script>
   <title>Newsletter-App</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <i class="fas fa-bars"></i>
     <i class="fas fa-search"></i>
     <h1>Sephoree</h1>
-    <i class="far fa-user"></i>
+    <i class="far fa-user"><a href="/api/admin">click me!!!</a></i>
     <i class="fas fa-shopping-bag"></i>
   </header>
   <main>
@@ -30,7 +31,7 @@
       <hr />
     </div>
     <div class="hero">
-      <img src="../public/images/image.png" alt="Makeup Image" class="heroImg"/>
+      <img src="images/image.png" alt="Makeup Image" class="heroImg"/>
     </div>
     <div class="footerText">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
@@ -44,19 +45,19 @@
       </div>
       <button class="signUpButton" id="signUpButton">Sign Up</button>
     </div>
-    <div class="formInput">
+    <div class="formInput" >
       <i class="far fa-times-circle" id="formEsc"></i>
-      <div class="formContainer">
-        <input type="text" name="firstName" id="firstName" placeholder="First Name" />
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <div class="captcha">Captcha</div>
-      </div>
+        <form id="hello" class="formContainer">
+          <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <div class="captcha">Captcha</div>
+        </form>
       <button class="submitButton" id="submitButton">Submit</button>
     </div>
     <div class="successResponse">
       <i class="far fa-times-circle" id="successEsc"></i>
-      <img src="../public/images/unsplash.jpg" alt="Makeup Image" class="splashImg"/>
+      <img src="/images/unsplash.jpg" alt="Makeup Image" class="splashImg"/>
       <div class="userNameDisplay">
         <h3>Sarah, <br> You are in!</h3>
       </div>
@@ -70,6 +71,5 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
     </div>
   </footer>
-  <script src="/public/scripts/app.js"></script>
 </body>
 </html>
