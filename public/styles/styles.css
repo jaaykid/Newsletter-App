@@ -8,22 +8,27 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 5vh;
+  font-size: 32px;
+  color: #E98EB2;
 }
 
 h2 {
   margin: 0;
-  font-size: 3vh;
+  font-size: 32px;
 }
 
 h3 {
   margin: 0;
-  font-size: 3vh;
+  font-size: 12px;
 }
 
 p {
   margin: 0;
-  font-size: 2vh;
+  font-size: 12px;
+}
+
+br {
+  margin: 0;
 }
 
 /* ________________________________________________ */
@@ -98,37 +103,34 @@ hr {
 /* ________________________________________________ */
 
 .signUpPopUp {
-  display: flex;
   position: fixed;
+  display: flex;
   flex-direction: column;
-  bottom: 0;
-  width: 100vw;
-  height: 30vh;
+  bottom: 1vh;
+  width: 318px;
+  height: 297px;
   background-color: white;
-  border-top: .25vh solid;
+  filter: drop-shadow(0 0 0.5rem grey);
   text-align: center;
 }
 
 .popUpContainer {
-  width: 70vw;
-  margin: 0 auto;
+  width: 318px;
+  margin: 0 auto 36px auto;
 }
 
 .popUpText {
-  margin: 0 auto;
-}
+  margin: 9px auto 0 auto;
+} 
 
-.fa-times-circle{
-  align-self: flex-end;
-  bottom: 25vw;
-  right: 2vw;
-  margin: 2vh 2vh 0 0;
+.signUpCircle{
+  margin: 28px 0 0 0;
   color: #9B9B9B;
 }
 
 .signUpButton {
-  height: 5vh;
-  width: 30vw;
+  height: 41px;
+  width: 135px;
   margin: 0 auto 5vh auto;
   color: white;
   background-color: #E98EB2;
@@ -138,43 +140,97 @@ hr {
 /* ________________________________________________ */
 
 .formInput {
-  position: fixed;
+  position: absolute;
   display: none;
   flex-direction: column;
-  background-color: #D8D8D8;
-  height: 75vh;
-  width: 85vw;
+  justify-content: center;
+  height: 526px;
+  width: 297px;
+  background-color: #F3D8DF;
+  filter: drop-shadow(0 0 0.5rem grey);
+}
+
+.formTitle {
+  display: flex;
+  justify-content: center;
+  width: 297px;
+  margin: 0 auto;
+  font-size: 19px;
+}
+
+.formCircle {
+  align-self: flex-end;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  margin: 2vh 2vh 0 0;
+  color: #9B9B9B;
+}
+
+.customCat {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 47px;
+  width: 257px;
+  margin: 16px auto;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.fa-sliders-h{
+  font-size: 19px;
+  margin: 0 0 0 19px;
+}
+
+.customText {
+  font-size: 16px;
+  margin: 0 0 0 47px;
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #D8D8D8;
-  height: 50vh;
-  width: 85vw;
-  margin: 5vh 0 5vh 0;
+  background-color: #F3D8DF;
+  width: 297px;
 }
 
 input[type=text], input[type=email]{
-  height: 5vh;
-  width: 70vw;
-  margin: 0 auto;
+  height: 47px;
+  width: 257px;
+  margin: 16px auto;
   border: 1px solid black;
+  text-align: center;
 }
 
 .captcha {
-  height: 5vh;
-  width: 70vw;
-  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 47px;
+  width: 257px;
+  margin: 16px auto;
   background-color: white;
   border: 1px solid black;
+  text-align: center;
+}
+
+.fa-sync-alt{
+  font-size: 19px;
+  margin: 0 0 0 19px;
+}
+
+.customTextBottom {
+  font-size: 16px;
+  margin: 0 0 0 60px;
 }
 
 .submitButton {
-  height: 5vh;
-  width: 30vw;
-  margin: 0 auto 5vh auto;
+  height: 41px;
+  width: 135px;
+  margin: 0 auto;
   color: white;
   background-color: #E98EB2;
   border-radius: 1vh;
@@ -183,42 +239,56 @@ input[type=text], input[type=email]{
 /* ________________________________________________ */
 
 .successResponse {
-  /* background-image: url('../../public/images/unsplash.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 -50vh;  */
   position: fixed;
   display: none;
   flex-direction: column;
-  width: 85vw;
-  height: 85vh;
+  width: 294px;
+  height: 499px;
+  filter: drop-shadow(0 0 0.5rem grey);
   background-color: white;
 }
 
 .splashImg {
-  width: 85vw;
-  height: 50%;
-  object-fit: cover;
-  object-position: 50% 50%;
+  width: 269px;
+  height: 205px;
+  margin: 0 12.5px 0 12.5px;
 }
 
 .userNameDisplay {
   text-align: center;
-  height: 10vh;
-  margin-top: 20vh;
+  height: 71px;
+  width: 269px;
+  margin: 0 auto;
   font-weight: 900;
   color: white;
   background-color: rgba(74, 74, 74, 0.74)
 }
 
-.backToShopping {
-  height: 5vh;
-  width: 30vw;
+.userNameText {
   margin: 0 auto;
+  font-size: 19px;
+}
+
+.backToShopping {
+  height: 31px;
+  width: 169px;
+  margin: 11px 62.5px 20px 62.5px;
   color: white;
   background-color: #E98EB2;
   border-radius: 1vh;
 }
+
+.successText {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.successBrandText {
+  color: #E98EB2;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+
 
 /* ________________________________________________ */
 

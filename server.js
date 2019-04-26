@@ -41,7 +41,7 @@ let user = [
     },
     {
     firstName: 'Thor',
-    lastName: '...',
+    lastName: 'Odin Son',
     email: 'thor@gmail.com'
     },
     {

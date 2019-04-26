@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
-  <link rel="stylesheet" href="/public/styles/styles.css">
-  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <script defer src="/scripts/jquery-3.3.1.js"></script>
+  <script defer src="/scripts/app.js"></script>
   <title>Newsletter-App</title>
 </head>
 <body>
@@ -30,39 +31,53 @@
       <hr />
     </div>
     <div class="hero">
-      <img src="../public/images/image.png" alt="Makeup Image" class="heroImg"/>
+      <img src="../images/image.png" alt="Makeup Image" class="heroImg"/>
     </div>
     <div class="footerText">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
     </div>
     <!-- _____________________PopUp Section___________________________ -->
     <div class="signUpPopUp">
-      <i class="far fa-times-circle" id="signUpEsc"></i>
+      <i class="far fa-times-circle signUpCircle" id="signUpEsc"></i>
       <div class="popUpContainer">
         <h2>Don't miss a thing!</h2>
-        <p class="popUpText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <p class="popUpText">Sign up for our newsletter for updates</p>
+        <p>about products, new arrivals, and</p>
+        <p>special offers.  Unsubscribe at anytime.</p>
+        <p>For more information, see our</p>
+        <p class="privacyPolicy">Privacy Policy</p>
       </div>
       <button class="signUpButton" id="signUpButton">Sign Up</button>
     </div>
     <div class="formInput">
-      <i class="far fa-times-circle" id="formEsc"></i>
+      <i class="far fa-times-circle formCircle" id="formEsc"></i>
+      <p class="formTitle">A newsletter as unique as you</p>
       <div class="formContainer">
+        <div class="customCat">
+          <i class="fas fa-sliders-h"></i>
+          <p class="customText">Customize?</p>
+        </div>
         <input type="text" name="firstName" id="firstName" placeholder="First Name" />
         <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
         <input type="email" name="email" id="email" placeholder="Email" />
-        <div class="captcha">Captcha</div>
+        <div class="captcha">
+          <i class="fas fa-sync-alt"></i>
+          <p class="customTextBottom">Captcha</p>
+        </div>
       </div>
-      <button class="submitButton" id="submitButton">Submit</button>
+      <button class="submitButton" id="submitButton">Register</button>
     </div>
     <div class="successResponse">
       <i class="far fa-times-circle" id="successEsc"></i>
-      <img src="../public/images/unsplash.jpg" alt="Makeup Image" class="splashImg"/>
+      <img src="../images/unsplash.jpg" alt="Makeup Image" class="splashImg"/>
       <div class="userNameDisplay">
-        <h3>Sarah, <br> You are in!</h3>
+        <h2 class="userNameText">Sarah, <br> You are in!</h2>
       </div>
       <button class="backToShopping" id="backToShopping">Back to Shopping</button>
-      <p class="popUpText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-      <p class="popUpText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      <p class="successText">We'll send you a welcome message,</p>
+      <p class="successText">keep a look out.  You will be recieving</p>
+      <p class="successText">our newsletter shortly!</p>
+      <p class="successBrandText">Sephoree</p>
     </div>
   </main>
   <footer>
@@ -70,6 +85,5 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
     </div>
   </footer>
-  <script src="/public/scripts/app.js"></script>
 </body>
 </html>
