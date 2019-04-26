@@ -85,6 +85,7 @@ app.post('/api/users', (req, res) => {
         if (err) return console.log(err);
         res.json(savedUser)
     })  
+
 });
 
 // delete user 
@@ -97,6 +98,8 @@ app.delete('/api/users/:id', (req, res) => {
             res.json(deletedUser);
     });
 });
+
+
 
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

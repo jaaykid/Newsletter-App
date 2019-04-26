@@ -7,7 +7,7 @@ const UserSchema = new Schema ({
     email: String,
     date: {
         type: Date, 
-        default: Date.Now
+        default: Date.now
     }
 })
 

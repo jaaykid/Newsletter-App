@@ -28,3 +28,15 @@ $('#successEsc').on('click', (e) => {
 $('#backToShopping').on('click', (e) => {
   $('.successResponse').css('display', 'none');
 });
+
+
+$('.submitButton').on('click', function () {
+$.ajax({
+  type: "POST",
+  url: "/api/users",
+  data: $('#hello').serialize(),
+  success: function (json) {
+    console.log(json)
+  }
+});
+})
